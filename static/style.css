@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background: url("assets/overlay.png") repeat fixed top left / 100px 100px,
+              linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) no-repeat fixed center center / cover,
+              url("assets/bg.jpg") no-repeat fixed bottom center / cover;
+  background-color: #ffffff;
+}
+
+.form-signin, .card {
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 330px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-signin .form-control, input {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.img-preview {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.btn {
+  /* Existing .btn styles */
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .form-signin, .card {
+    max-width: 90%;
+  }
+
+  .img-preview {
+    max-width: 95%;
+    max-height: 400px; /* Adjust as needed */
+  }
+}
+
+
